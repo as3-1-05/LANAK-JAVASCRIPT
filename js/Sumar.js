@@ -9,4 +9,4 @@ z = x + y
     else {console.log("es igual que 10")}
     
 
-}
+
