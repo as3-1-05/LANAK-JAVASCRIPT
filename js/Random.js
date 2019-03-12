@@ -3,7 +3,7 @@
 
 
 
-z = Math.floor(Math.random() * 11):
+z = Math.floor(Math.random() * 51);
 
 console.log("El valor de de z es: " + z)
 
