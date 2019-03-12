@@ -1,7 +1,9 @@
-x=5
-y=1
+x = 5
+y = 1
 
-z= x+y
+z = x + y
 
-console.log(z)
+if (z > 10) {console.log("es mayor que 10")}
+
+
 
