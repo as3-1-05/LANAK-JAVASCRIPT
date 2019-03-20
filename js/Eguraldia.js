@@ -1,25 +1,46 @@
+/*
+ejemplo 03: for + arrays + JSON
+*/
 
+// https://www.w3schools.com/js/js_loop_for.asp
+// https://www.w3schools.com/js/js_objects.asp
+// https://www.w3schools.com/js/js_arrays.asp
 
+/*
+Definir los datos meteorológicos de la tendencia de los próximos 6 días. Con arrays [] y diccionarios {}
+http://www.euskalmet.euskadi.eus
+*/
 
-
-
-Eguraldia = [
-    {Eguna:"Astelehena", Zerua:"Argia", Temperatura:12},
-    {Eguna:"Asteartea", Zerua:"Argia", Temperatura:1},
-    {Eguna:"Asteazkena", Zerua:"Argia", Temperatura:22},
-    {Eguna:"Osteguna", Zerua:"Argia", Temperatura:13},
-    {Eguna:"Ostirala", Zerua:"Argia", Temperatura:18},
-    
+tiempo = [
+    {dia:"Miércoles", cielo:"lluvia", temperatura:12},
+    {dia:"Jueves", cielo:"Nublado", temperatura:20},
+    {dia:"Viernes", cielo:"lluvia", temperatura:23},
+    {dia:"Sábado", cielo:"sol", temperatura:10},
+    {dia:"Domingo", cielo:"sol", temperatura:5},
+    {dia:"lunes", cielo:"Nublado", temperatura:0},
 ]
 
-console.log(Eguraldia[0].Eguna, Eguraldia[0].Zerua)
-console.log(Eguraldia[1].Eguna, Eguraldia[1].Zerua)
-console.log(Eguraldia[2].Eguna, Eguraldia[2].Zerua)
-console.log(Eguraldia[3].Eguna, Eguraldia[3].Zerua)
-console.log(Eguraldia[4].Eguna, Eguraldia[4].Zerua)
+/*
+Imprimir los datos usando 'for' y console.log
+*/
 
+/*
+console.log(tiempo[0].dia + " " + tiempo[0].cielo)
+console.log(tiempo[1].dia + " " + tiempo[1].cielo)
+console.log(tiempo[2].dia + " " + tiempo[2].cielo)
+console.log(tiempo[3].dia + " " + tiempo[3].cielo)
+console.log(tiempo[4].dia + " " + tiempo[4].cielo)
+console.log(tiempo[5].dia + " " + tiempo[5].cielo)
+*/
 
 var i;
-for (i = 0; i < tiempo.length; i++) {
-    console.log(tiempo[i].dia + "" + tiempo[i].cielo)
+for (i = 0; i < tiempo.length; i++) { 
+    console.log(i)
+    console.log(tiempo[i].dia + " " + tiempo[i].cielo)
 }
+
+/*
+Crear una página HTML con los datos anteriores usando las imágenes (sol, nubes, ...)
+nube: http://www.euskalmet.euskadi.eus/appcont/meteorologia/meteodat/images/12.png
+...
+*/
