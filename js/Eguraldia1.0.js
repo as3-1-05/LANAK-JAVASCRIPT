@@ -35,8 +35,11 @@ console.log(tiempo[5].dia + " " + tiempo[5].cielo)
 
 var i;
 for (i = 0; i < tiempo.length; i++) { 
-    console.log(tiempo[i].dia + " " + tiempo[i].cielo)
+    if (tiempo[i].cielo == "lluvia"){
+    console.log(tiempo[i].dia)}
 }
+
+
 
 /*
 Crear una página HTML con los datos anteriores usando las imágenes (sol, nubes, ...)
