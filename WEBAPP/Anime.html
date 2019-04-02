@@ -1,0 +1,181 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Fate</title>
+  </head>
+  <script>
+    
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Leer menos"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+  <style>
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      background-image: url(imagenes/fate.png);
+    }
+
+    .rounded {
+  border-radius: 10px;
+}
+
+.negro 
+{
+      /* The image used */
+      background-color: black;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+
+#more {display: none;
+
+}
+
+
+    </style>
+  <body class="negro">
+
+    <!-- https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
+    <div class="container-fluid pl-0 pr-0">
+
+    <!--<div class="w-screen mt-4">-->
+            <!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
+
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                      <a class="navbar-brand" href="proyecto.html">Fate/Apocrypha</a>
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="anime.html">Anime <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="manga.html">Manga</a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="proyecto.html">Historia</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                          <a class="nav-link dropdown-toggle" href="proyecto.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Personajes
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="proyecto.html">Sieg</a>
+                            <a class="dropdown-item" href="proyecto.html">Ruler</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="proyecto.html">Facciones</a>
+                          </div>
+                        </li>
+                        
+                      </ul>
+                      
+                    </div>
+            </nav>  
+
+            <div class="container">
+              <div class="row">
+                
+                <div class="col-12 text-center bg-dark text-white py-3"><h1>Anime</h1> <br> Fate/Apocrypha, al igual que otras obras de la franquicia como Fate/stay night o Fate/Zero, nos sitúa en una
+                   guerra por el Santo Grial. No obstante, Fate/Apocrypha presenta diferencias respecto a las otras obras. Por un lado, la guerra no se desarrolla en Fuyuki City, sino que está ambientada 
+                   en un universo paralelo al de Fate/stay night y Fate/Zero. Además, en esta ocasión no hay 7 Servants, sino que hay 14, divididos en dos facciones.
+                   <br><br><span id="dots"></span><span id="more">
+                  La novela comienza tras el robo del Santo Grial de Fuyuki City después de la Tercera Guerra. La obra se centra en dos facciones, Rojo y Negro, cada una invocando 7 Servants y el propio 
+                  Santo Grial invocando a un Servant de la clase Ruler, una clase especial que sirve como mediador durante la guerra. Los miembros de la facción roja son enviados por la Asociación de Magos 
+                  de la Torre del Reloj, mientras que los miembros de la facción negra pertenecen a una organización románica llamada Yggdramillennia.
+
+                </span><button onclick="myFunction()" id="myBtn">Leer más</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container bg-dark text-white">
+<br><br>
+            <div class="row">
+                <div class="col-sm">
+                  <h2>Facción Roja</h2>
+                    <p>La Facción Roja proviene de la Asociación de Magos en la Torre del Reloj, los cuales son los líderes en todas las ramas de la magia antigua y moderna. Cuando se enteraron de que la familia 
+                      Yggdmillennia estaba en posesión de Gran Grial, intervinieron para que fuese posible invocar a sus propios servants, y así recuperar el grial. Los servants que fueron invocados son:</br>
+                    <br> Mordred, Atalanta, Karna, Aquiles, Shakespeare, Espartaco y Semiramis.</p>            
+                    <img src="imagenes/rojo.jpg" class="img-rounded" alt="Cinque Terre" width="100%"> 
+                <br><br>
+                </div>
+
+                <div class="col-sm">
+                    <h2>Facción negra</h2>
+                    <p>La Facción Negra se compone de los magos asociados con la familia Yggdramillennia, quienes buscan el poder del Santo Grial para recuperar el prestigio que tenían antes de ser discriminados 
+                        por la Asociación de Magos. Dentro de sus filas poseen a los siguientes servants:<br>
+                    <br>Siegfried, Quirón, Vlad el Empalador, Astolfo, Avicebron, Frankestein y Jack el Destripador. </p>            
+                   <img src="imagenes/negro.jpg" class="img-rounded" alt="Cinque Terre" width="100%"> 
+                  <br><br>
+                </div>
+
+            </div>
+
+          </div>
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-9">
+
+  <!-- Footer Elements -->
+  <div class="container.container-fluid">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 text-white bg-success">Derechos de autor:
+    <a class="text-white" href="https://mdbootstrap.com/education/bootstrap/"> Jon Badiola</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</div>
+            
+            <!-- https://getbootstrap.com/docs/4.0/utilities/position/ -->
+            
+    
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
