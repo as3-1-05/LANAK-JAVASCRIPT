@@ -1,9 +1,13 @@
-const express = require('express')
-const app = express()
-const port = 3000
+var http = require('http');
+var fs = require('fs');
 
-app.get('/', (req, res) => res.send('Hola mundo mundito <3'))
+var server = http.createServer(function(req, res) {
+    console.log('request was made: ' + req.url);
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    var myReadStream = fs.createReadStream(__dirname + '/proyecto.html', 'utf8');
+    myReadStream.pipe(res);
 
-app.get('/info', (req, res) => res.send('Well cum  to ASIR'))
+});
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+server.listen(3000, '127.0.0.1');
+console.log('yo dawgs, now listening to port 3000');
